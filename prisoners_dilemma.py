@@ -1,5 +1,8 @@
 from __future__ import print_function
 
+# Jean Farley, Cindy Chen
+# 2/2/2016
+
 ''' 
 PrisonerDilemma.py allows hard-coding different strategies
 for the Iterative Prisoners Dilemma, the canonical game of game-theory.
