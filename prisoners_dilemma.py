@@ -352,13 +352,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         else:
             if len(opponent_history)==0: #It's the first round: collude
                 return 'c'
-            elif history[-1]=='b' and opponent_history[-1]=='c': 
+            while opponent_history[-1]=='b': 
                 return 'b' 
-            else:
-                recent_round_opponent = opponent_history[-1]
-                recent_round_me = history[-1]
-
-
 
 
 
