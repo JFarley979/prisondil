@@ -350,12 +350,13 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
         if getting_team_name:
             return 'The Ducklings'
         else:
-            # use history, opponent_history, score, opponent_score
-            # to compute your strategy
             if len(opponent_history)==0: #It's the first round: collude
                 return 'c'
-            elif history[-1]=='c' and opponent_history[-1]=='b':
-                return 'b' #otherwise collude
+            elif history[-1]=='b' and opponent_history[-1]=='c': 
+                return 'b' 
+            else:
+                recent_round_opponent = opponent_history[-1]
+                recent_round_me = history[-1]
 
 
 
