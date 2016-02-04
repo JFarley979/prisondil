@@ -354,6 +354,8 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 return 'c'
             while opponent_history[-1]=='b': 
                 return 'b' 
+            else:
+                return 'c'
 
 
 
